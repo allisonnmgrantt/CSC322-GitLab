@@ -1,0 +1,40 @@
+git clone https://github.com/GeoffsUMStuff/labtask-06-allisonnmgrantt.git
+cd labtask-06-allisonnmgrantt
+vim Makefile
+Make
+./Program.out
+Make clean
+mkdir GitLab
+cd GitLab
+cp ../HelloWorld.c HelloWorld.c
+git init
+git add HelloWorld.c
+git commit -m "added HelloWorld"
+git remote add origin https://github.com/allisonnmgrantt/CSC322-GitLab
+git branch master
+git push -u origin master
+vim HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated file"
+git push --set-upstream origin master
+git branch Happy
+git checkout Happy
+git push --set-upstream origin Happy
+vim HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated file"
+git push
+git checkout master
+vim HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated file"
+git push
+git merge Happy
+vim HelloWorld.c
+git add HelloWorld.c
+git commit -m "Merged"
+git push
+vim HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated file"
+git push
